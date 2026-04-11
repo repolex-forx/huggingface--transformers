@@ -4,6 +4,7 @@
     "src/transformers/models/colqwen2/modular_colqwen2.py",
     "src/transformers/models/gpt_oss/modular_gpt_oss.py",
     "src/transformers/utils/output_capturing.py",
+    "tests/cli/test_serve.py",
     "tests/models/conditional_detr/test_image_processing_conditional_detr.py",
     "tests/models/dpr/test_modeling_dpr.py",
     "tests/models/swin/test_modeling_swin.py",
@@ -15,13 +16,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz",
     "call_sites": 363513,
     "import_statements": 16265,
-    "call_targets_resolved": 408,
+    "call_targets_resolved": 633,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 545,
+    "errors": 1148,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -29,5 +30,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14443
+  "elapsed_seconds": 14511
 }
