@@ -1,14 +1,20 @@
 {
   "commit_sha": "c6c8503869367af938666810e01a71866ca4fe93",
   "completed_files": [
+    "examples/pytorch/language-modeling/run_fim_no_trainer.py",
     "src/transformers/models/colqwen2/modular_colqwen2.py",
+    "src/transformers/models/dinov3_vit/image_processing_dinov3_vit.py",
     "src/transformers/models/gpt_oss/modular_gpt_oss.py",
+    "src/transformers/models/higgs_audio_v2_tokenizer/modeling_higgs_audio_v2_tokenizer.py",
+    "src/transformers/models/smolvlm/modeling_smolvlm.py",
+    "src/transformers/models/wav2vec2_with_lm/processing_wav2vec2_with_lm.py",
     "src/transformers/utils/output_capturing.py",
     "tests/cli/test_serve.py",
     "tests/models/conditional_detr/test_image_processing_conditional_detr.py",
     "tests/models/dpr/test_modeling_dpr.py",
     "tests/models/swin/test_modeling_swin.py",
-    "tests/utils/test_video_utils.py"
+    "tests/utils/test_video_utils.py",
+    "utils/add_dates.py"
   ],
   "completed_types": [],
   "stats": {
@@ -16,13 +22,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz",
     "call_sites": 363513,
     "import_statements": 16265,
-    "call_targets_resolved": 633,
+    "call_targets_resolved": 1009,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 1148,
+    "errors": 1796,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -30,5 +36,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14511
+  "elapsed_seconds": 14468
 }
