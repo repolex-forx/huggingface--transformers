@@ -1,0 +1,20 @@
+[2026-04-12T02:33:06Z] === ENRICH ITERATION 5 START | repo=huggingface/transformers sha=c6c85038 ===
+[2026-04-12T02:33:06Z] [iter=5] PHASE START: enrich repo=huggingface/transformers sha=c6c85038 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c6c85038-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz
+[2026-04-12T02:33:06Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-12T02:45:05Z] [iter=5] AST store loaded triples=53054733 load_secs=695 mem_mb=1240 MB
+[2026-04-12T02:45:05Z] [iter=5] Step 2: Finding LSP targets mem_mb=1240 MB
+[2026-04-12T02:48:59Z] [iter=5] LSP targets found call_sites=363513 imports=16265 extends=9767 implements=0 secs=234
+[2026-04-12T02:49:05Z] [iter=5] Loaded checkpoint partial graph triples=141803
+[2026-04-12T02:52:51Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1240 MB
+[2026-04-12T02:58:17Z] [iter=5] Position index built positions=3522794 nodes_with_types=4548110 secs=326 mem_mb=7738 MB
+[2026-04-12T02:58:17Z] [iter=5] Step 3: Starting LSP resolution mem_mb=7738 MB already_completed_types=[] already_completed_files=18
+[2026-04-12T02:58:17Z] [iter=5] Resolving target type target_type=call_site count=363513
+[2026-04-12T02:58:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=25.2 files_done=0 resolved=0 errors=0 current=tests/models/qwen3_omni_moe/test_processing_qwen3_omni_moe.py
+[2026-04-12T03:25:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=51.9 files_done=1 resolved=16 errors=73 current=tests/models/gpt_bigcode/test_modeling_gpt_bigcode.py
+[2026-04-12T04:28:59Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=115.9 files_done=2 resolved=61 errors=216 current=tests/models/idefics2/test_modeling_idefics2.py
+[2026-04-12T05:32:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=179.8 files_done=3 resolved=99 errors=382 current=src/transformers/models/afmoe/__init__.py
+[2026-04-12T05:33:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=180.6 files_done=4 resolved=100 errors=384 current=src/transformers/models/moshi/modeling_moshi.py
+[2026-04-12T06:34:06Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=241.0 files_completed=22 new_files_this_iter=4 mem_mb=7829 MB
+[2026-04-12T06:34:06Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz triples=145650
+[2026-04-12T06:34:09Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-04-12T06:34:09Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14461 elapsed_min=241.0 files_completed=22
