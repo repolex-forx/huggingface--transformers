@@ -1,0 +1,18 @@
+[2026-04-12T10:51:48Z] === ENRICH ITERATION 7 START | repo=huggingface/transformers sha=c6c85038 ===
+[2026-04-12T10:51:48Z] [iter=7] PHASE START: enrich repo=huggingface/transformers sha=c6c85038 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/c6c85038-enrich-iter-007.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz
+[2026-04-12T10:51:48Z] [iter=7] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-12T11:04:20Z] [iter=7] AST store loaded triples=53054733 load_secs=731 mem_mb=1231 MB
+[2026-04-12T11:04:20Z] [iter=7] Step 2: Finding LSP targets mem_mb=1231 MB
+[2026-04-12T11:08:12Z] [iter=7] LSP targets found call_sites=363513 imports=16265 extends=9767 implements=0 secs=232
+[2026-04-12T11:08:19Z] [iter=7] Loaded checkpoint partial graph triples=149928
+[2026-04-12T11:11:58Z] [iter=7] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1231 MB
+[2026-04-12T11:18:15Z] [iter=7] Position index built positions=3522794 nodes_with_types=4548110 secs=377 mem_mb=7708 MB
+[2026-04-12T11:18:15Z] [iter=7] Step 3: Starting LSP resolution mem_mb=7708 MB already_completed_types=[] already_completed_files=24
+[2026-04-12T11:18:15Z] [iter=7] Resolving target type target_type=call_site count=363513
+[2026-04-12T11:18:17Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=0 resolved=0 errors=0 current=tests/utils/test_image_utils.py
+[2026-04-12T13:23:20Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=151.5 files_done=1 resolved=111 errors=353 current=tests/models/time_series_transformer/test_modeling_time_series_transformer.py
+[2026-04-12T13:59:52Z] [iter=7] HEARTBEAT target_type=call_site elapsed_min=188.1 files_done=2 resolved=198 errors=434 current=tests/test_modeling_common.py
+[2026-04-12T14:53:38Z] [iter=7] CHECKPOINT TRIGGERED elapsed_min=241.8 files_completed=26 new_files_this_iter=2 mem_mb=7776 MB
+[2026-04-12T14:53:38Z] [iter=7] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz triples=153861
+[2026-04-12T14:53:41Z] [iter=7] Checkpoint written, exiting with code 7
+[2026-04-12T14:53:41Z] [iter=7] PHASE END: enrich (checkpointed) elapsed_s=14510 elapsed_min=241.8 files_completed=26

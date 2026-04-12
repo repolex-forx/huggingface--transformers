@@ -23,6 +23,8 @@
     "tests/models/idefics2/test_modeling_idefics2.py",
     "tests/models/qwen3_omni_moe/test_processing_qwen3_omni_moe.py",
     "tests/models/swin/test_modeling_swin.py",
+    "tests/models/time_series_transformer/test_modeling_time_series_transformer.py",
+    "tests/utils/test_image_utils.py",
     "tests/utils/test_video_utils.py",
     "utils/add_dates.py"
   ],
@@ -32,13 +34,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/c6c8503869367af938666810e01a71866ca4fe93.nq.gz",
     "call_sites": 363513,
     "import_statements": 16265,
-    "call_targets_resolved": 1920,
+    "call_targets_resolved": 2226,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 3513,
+    "errors": 4097,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -46,5 +48,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14466
+  "elapsed_seconds": 14510
 }
