@@ -1,0 +1,28 @@
+{
+  "commit_sha": "52d24b018e7aa12264b68ae2e162f9aadb26005b",
+  "completed_files": [
+    "src/transformers/models/flava/modeling_flava.py",
+    "tests/models/auto/test_image_processing_auto.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/huggingface/transformers/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz",
+    "call_sites": 363504,
+    "import_statements": 16265,
+    "call_targets_resolved": 474,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 534,
+    "extends_clauses": 9767,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 22218,
+    "import_symbols_denormalized": 49854,
+    "extends_class_denormalized": 9767,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14423
+}
