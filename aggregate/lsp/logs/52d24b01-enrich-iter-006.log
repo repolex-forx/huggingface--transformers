@@ -1,0 +1,18 @@
+[2026-04-19T05:25:56Z] === ENRICH ITERATION 6 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-19T05:25:56Z] [iter=6] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-19T05:25:56Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-19T05:38:12Z] [iter=6] AST store loaded triples=53053174 load_secs=715 mem_mb=1221 MB
+[2026-04-19T05:38:12Z] [iter=6] Step 2: Finding LSP targets mem_mb=1221 MB
+[2026-04-19T05:41:53Z] [iter=6] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=221
+[2026-04-19T05:41:59Z] [iter=6] Loaded checkpoint partial graph triples=147623
+[2026-04-19T05:45:26Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1221 MB
+[2026-04-19T05:51:35Z] [iter=6] Position index built positions=3522695 nodes_with_types=4547979 secs=369 mem_mb=7860 MB
+[2026-04-19T05:51:35Z] [iter=6] Step 3: Starting LSP resolution mem_mb=7860 MB already_completed_types=[] already_completed_files=13
+[2026-04-19T05:51:35Z] [iter=6] Resolving target type target_type=call_site count=363504
+[2026-04-19T05:51:37Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=25.7 files_done=0 resolved=0 errors=0 current=src/transformers/models/deformable_detr/modeling_deformable_detr.py
+[2026-04-19T07:21:52Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=115.9 files_done=1 resolved=47 errors=250 current=src/transformers/generation/streamers.py
+[2026-04-19T07:28:03Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=122.1 files_done=2 resolved=73 errors=267 current=src/transformers/models/pp_doclayout_v2/modeling_pp_doclayout_v2.py
+[2026-04-19T09:27:29Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=241.5 files_completed=15 new_files_this_iter=2 mem_mb=7901 MB
+[2026-04-19T09:27:29Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=152432
+[2026-04-19T09:27:31Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-04-19T09:27:31Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=14493 elapsed_min=241.5 files_completed=15
