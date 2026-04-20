@@ -1,0 +1,20 @@
+[2026-04-20T15:27:35Z] === ENRICH ITERATION 14 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-20T15:27:35Z] [iter=14] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-014.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-20T15:27:35Z] [iter=14] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-20T15:40:31Z] [iter=14] AST store loaded triples=53053174 load_secs=754 mem_mb=1235 MB
+[2026-04-20T15:40:31Z] [iter=14] Step 2: Finding LSP targets mem_mb=1235 MB
+[2026-04-20T15:44:46Z] [iter=14] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=255
+[2026-04-20T15:44:54Z] [iter=14] Loaded checkpoint partial graph triples=180852
+[2026-04-20T15:48:53Z] [iter=14] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1249 MB
+[2026-04-20T15:55:36Z] [iter=14] Position index built positions=3522695 nodes_with_types=4547979 secs=402 mem_mb=7950 MB
+[2026-04-20T15:55:36Z] [iter=14] Step 3: Starting LSP resolution mem_mb=7950 MB already_completed_types=[] already_completed_files=36
+[2026-04-20T15:55:36Z] [iter=14] Resolving target type target_type=call_site count=363504
+[2026-04-20T15:55:38Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=28.1 files_done=0 resolved=0 errors=0 current=tests/models/vipllava/test_modeling_vipllava.py
+[2026-04-20T16:05:55Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=38.3 files_done=1 resolved=3 errors=28 current=examples/pytorch/image-pretraining/run_mim.py
+[2026-04-20T16:25:17Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=57.7 files_done=2 resolved=59 errors=67 current=tests/test_sentencepiece_backend_mixin.py
+[2026-04-20T17:38:18Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=130.7 files_done=3 resolved=111 errors=266 current=src/transformers/models/auto/auto_factory.py
+[2026-04-20T18:18:28Z] [iter=14] HEARTBEAT target_type=call_site elapsed_min=170.9 files_done=4 resolved=178 errors=376 current=tests/models/diffllama/test_modeling_diffllama.py
+[2026-04-20T19:29:54Z] [iter=14] CHECKPOINT TRIGGERED elapsed_min=242.3 files_completed=40 new_files_this_iter=4 mem_mb=7959 MB
+[2026-04-20T19:29:54Z] [iter=14] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=184729
+[2026-04-20T19:29:57Z] [iter=14] Checkpoint written, exiting with code 7
+[2026-04-20T19:29:57Z] [iter=14] PHASE END: enrich (checkpointed) elapsed_s=14539 elapsed_min=242.3 files_completed=40

@@ -1,8 +1,10 @@
 {
   "commit_sha": "52d24b018e7aa12264b68ae2e162f9aadb26005b",
   "completed_files": [
+    "examples/pytorch/image-pretraining/run_mim.py",
     "src/transformers/cli/serving/utils.py",
     "src/transformers/generation/streamers.py",
+    "src/transformers/models/auto/auto_factory.py",
     "src/transformers/models/clip/configuration_clip.py",
     "src/transformers/models/deformable_detr/modeling_deformable_detr.py",
     "src/transformers/models/esm/modeling_esmfold.py",
@@ -32,8 +34,10 @@
     "tests/models/glmasr/test_modeling_glmasr.py",
     "tests/models/janus/test_modeling_janus.py",
     "tests/models/mask2former/test_image_processing_mask2former.py",
+    "tests/models/vipllava/test_modeling_vipllava.py",
     "tests/quantization/bnb/test_mixed_int8.py",
     "tests/quantization/torchao_integration/test_torchao.py",
+    "tests/test_sentencepiece_backend_mixin.py",
     "tests/test_tensor_parallel_mixin.py",
     "tests/trainer/test_trainer.py",
     "utils/download_glue_data.py"
@@ -44,13 +48,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz",
     "call_sites": 363504,
     "import_statements": 16265,
-    "call_targets_resolved": 4532,
+    "call_targets_resolved": 4748,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 7644,
+    "errors": 8170,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -58,5 +62,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14508
+  "elapsed_seconds": 14538
 }
