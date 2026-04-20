@@ -1,0 +1,19 @@
+[2026-04-20T19:37:31Z] === ENRICH ITERATION 15 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-20T19:37:31Z] [iter=15] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-015.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-20T19:37:31Z] [iter=15] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-20T19:50:12Z] [iter=15] AST store loaded triples=53053174 load_secs=739 mem_mb=1238 MB
+[2026-04-20T19:50:12Z] [iter=15] Step 2: Finding LSP targets mem_mb=1238 MB
+[2026-04-20T19:54:01Z] [iter=15] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=229
+[2026-04-20T19:54:09Z] [iter=15] Loaded checkpoint partial graph triples=184729
+[2026-04-20T19:57:44Z] [iter=15] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1312 MB
+[2026-04-20T20:03:57Z] [iter=15] Position index built positions=3522695 nodes_with_types=4547979 secs=373 mem_mb=8011 MB
+[2026-04-20T20:03:57Z] [iter=15] Step 3: Starting LSP resolution mem_mb=8011 MB already_completed_types=[] already_completed_files=40
+[2026-04-20T20:03:57Z] [iter=15] Resolving target type target_type=call_site count=363504
+[2026-04-20T20:03:59Z] [iter=15] HEARTBEAT target_type=call_site elapsed_min=26.5 files_done=0 resolved=0 errors=0 current=tests/models/diffllama/test_modeling_diffllama.py
+[2026-04-20T21:01:02Z] [iter=15] HEARTBEAT target_type=call_site elapsed_min=83.5 files_done=1 resolved=1 errors=153 current=tests/models/switch_transformers/test_modeling_switch_transformers.py
+[2026-04-20T22:31:34Z] [iter=15] HEARTBEAT target_type=call_site elapsed_min=174.0 files_done=2 resolved=80 errors=335 current=src/transformers/models/vitpose/modeling_vitpose.py
+[2026-04-20T22:43:55Z] [iter=15] HEARTBEAT target_type=call_site elapsed_min=186.4 files_done=3 resolved=108 errors=369 current=tests/models/big_bird/test_modeling_big_bird.py
+[2026-04-20T23:39:34Z] [iter=15] CHECKPOINT TRIGGERED elapsed_min=242.1 files_completed=43 new_files_this_iter=3 mem_mb=8012 MB
+[2026-04-20T23:39:34Z] [iter=15] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=187621
+[2026-04-20T23:39:38Z] [iter=15] Checkpoint written, exiting with code 7
+[2026-04-20T23:39:38Z] [iter=15] PHASE END: enrich (checkpointed) elapsed_s=14523 elapsed_min=242.1 files_completed=43
