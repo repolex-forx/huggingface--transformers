@@ -1,0 +1,21 @@
+[2026-04-20T11:15:26Z] === ENRICH ITERATION 13 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-20T11:15:26Z] [iter=13] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-013.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-20T11:15:26Z] [iter=13] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-20T11:28:02Z] [iter=13] AST store loaded triples=53053174 load_secs=734 mem_mb=1234 MB
+[2026-04-20T11:28:02Z] [iter=13] Step 2: Finding LSP targets mem_mb=1234 MB
+[2026-04-20T11:31:59Z] [iter=13] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=237
+[2026-04-20T11:32:06Z] [iter=13] Loaded checkpoint partial graph triples=176479
+[2026-04-20T11:35:46Z] [iter=13] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1251 MB
+[2026-04-20T11:42:05Z] [iter=13] Position index built positions=3522695 nodes_with_types=4547979 secs=379 mem_mb=7950 MB
+[2026-04-20T11:42:05Z] [iter=13] Step 3: Starting LSP resolution mem_mb=7950 MB already_completed_types=[] already_completed_files=31
+[2026-04-20T11:42:05Z] [iter=13] Resolving target type target_type=call_site count=363504
+[2026-04-20T11:42:07Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=26.7 files_done=0 resolved=0 errors=0 current=src/transformers/models/lilt/modeling_lilt.py
+[2026-04-20T12:35:46Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=80.3 files_done=1 resolved=43 errors=151 current=tests/models/ernie4_5_vl_moe/test_processing_ernie4_5_vl_moe.py
+[2026-04-20T13:15:47Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=120.3 files_done=2 resolved=71 errors=250 current=src/transformers/models/clip/configuration_clip.py
+[2026-04-20T13:24:00Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=128.6 files_done=3 resolved=78 errors=273 current=src/transformers/models/megatron_bert/modeling_megatron_bert.py
+[2026-04-20T14:31:41Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=196.2 files_done=4 resolved=202 errors=463 current=src/transformers/cli/serving/utils.py
+[2026-04-20T15:06:05Z] [iter=13] HEARTBEAT target_type=call_site elapsed_min=230.6 files_done=5 resolved=254 errors=559 current=tests/models/vipllava/test_modeling_vipllava.py
+[2026-04-20T15:17:15Z] [iter=13] CHECKPOINT TRIGGERED elapsed_min=241.8 files_completed=36 new_files_this_iter=5 mem_mb=7952 MB
+[2026-04-20T15:17:15Z] [iter=13] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=180852
+[2026-04-20T15:17:18Z] [iter=13] Checkpoint written, exiting with code 7
+[2026-04-20T15:17:18Z] [iter=13] PHASE END: enrich (checkpointed) elapsed_s=14509 elapsed_min=241.8 files_completed=36
