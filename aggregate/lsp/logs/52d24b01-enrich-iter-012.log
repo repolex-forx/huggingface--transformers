@@ -1,0 +1,18 @@
+[2026-04-20T07:08:53Z] === ENRICH ITERATION 12 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-20T07:08:53Z] [iter=12] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-012.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-20T07:08:53Z] [iter=12] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-20T07:20:42Z] [iter=12] AST store loaded triples=53053174 load_secs=686 mem_mb=1234 MB
+[2026-04-20T07:20:42Z] [iter=12] Step 2: Finding LSP targets mem_mb=1234 MB
+[2026-04-20T07:24:49Z] [iter=12] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=248
+[2026-04-20T07:24:56Z] [iter=12] Loaded checkpoint partial graph triples=173770
+[2026-04-20T07:28:52Z] [iter=12] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1234 MB
+[2026-04-20T07:34:25Z] [iter=12] Position index built positions=3522695 nodes_with_types=4547979 secs=333 mem_mb=7823 MB
+[2026-04-20T07:34:25Z] [iter=12] Step 3: Starting LSP resolution mem_mb=7823 MB already_completed_types=[] already_completed_files=29
+[2026-04-20T07:34:25Z] [iter=12] Resolving target type target_type=call_site count=363504
+[2026-04-20T07:34:27Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=25.6 files_done=0 resolved=0 errors=0 current=src/transformers/models/esm/modeling_esmfold.py
+[2026-04-20T10:19:30Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=190.6 files_done=1 resolved=65 errors=442 current=src/transformers/models/layoutlmv2/tokenization_layoutlmv2.py
+[2026-04-20T10:31:45Z] [iter=12] HEARTBEAT target_type=call_site elapsed_min=202.9 files_done=2 resolved=136 errors=475 current=src/transformers/models/lilt/modeling_lilt.py
+[2026-04-20T11:09:41Z] [iter=12] CHECKPOINT TRIGGERED elapsed_min=240.8 files_completed=31 new_files_this_iter=2 mem_mb=7877 MB
+[2026-04-20T11:09:41Z] [iter=12] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=176479
+[2026-04-20T11:09:45Z] [iter=12] Checkpoint written, exiting with code 7
+[2026-04-20T11:09:45Z] [iter=12] PHASE END: enrich (checkpointed) elapsed_s=14448 elapsed_min=240.8 files_completed=31
