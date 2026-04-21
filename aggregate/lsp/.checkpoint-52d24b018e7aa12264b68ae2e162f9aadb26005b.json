@@ -6,9 +6,11 @@
     "src/transformers/generation/streamers.py",
     "src/transformers/models/auto/auto_factory.py",
     "src/transformers/models/clip/configuration_clip.py",
+    "src/transformers/models/cpm/tokenization_cpm.py",
     "src/transformers/models/deformable_detr/modeling_deformable_detr.py",
     "src/transformers/models/esm/modeling_esmfold.py",
     "src/transformers/models/flava/modeling_flava.py",
+    "src/transformers/models/glm_image/modeling_glm_image.py",
     "src/transformers/models/glm_image/modular_glm_image.py",
     "src/transformers/models/internvl/processing_internvl.py",
     "src/transformers/models/layoutlmv2/tokenization_layoutlmv2.py",
@@ -33,6 +35,7 @@
     "src/transformers/optimization.py",
     "tests/models/auto/test_image_processing_auto.py",
     "tests/models/big_bird/test_modeling_big_bird.py",
+    "tests/models/dac/test_modeling_dac.py",
     "tests/models/diffllama/test_modeling_diffllama.py",
     "tests/models/ernie4_5_vl_moe/test_processing_ernie4_5_vl_moe.py",
     "tests/models/glmasr/test_modeling_glmasr.py",
@@ -53,13 +56,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz",
     "call_sites": 363504,
     "import_statements": 16265,
-    "call_targets_resolved": 5227,
+    "call_targets_resolved": 5674,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 9238,
+    "errors": 9788,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -67,5 +70,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14530
+  "elapsed_seconds": 14529
 }
