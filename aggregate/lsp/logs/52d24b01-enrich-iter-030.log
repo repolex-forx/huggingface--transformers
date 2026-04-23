@@ -1,0 +1,16 @@
+[2026-04-23T11:16:00Z] === ENRICH ITERATION 30 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-04-23T11:16:00Z] [iter=30] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-030.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-04-23T11:16:00Z] [iter=30] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-04-23T11:28:19Z] [iter=30] AST store loaded triples=53053174 load_secs=721 mem_mb=1223 MB
+[2026-04-23T11:28:19Z] [iter=30] Step 2: Finding LSP targets mem_mb=1223 MB
+[2026-04-23T11:32:30Z] [iter=30] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=251
+[2026-04-23T11:32:39Z] [iter=30] Loaded checkpoint partial graph triples=211204
+[2026-04-23T11:36:27Z] [iter=30] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1223 MB
+[2026-04-23T11:42:04Z] [iter=30] Position index built positions=3522695 nodes_with_types=4547979 secs=337 mem_mb=7880 MB
+[2026-04-23T11:42:04Z] [iter=30] Step 3: Starting LSP resolution mem_mb=7880 MB already_completed_types=[] already_completed_files=52
+[2026-04-23T11:42:04Z] [iter=30] Resolving target type target_type=call_site count=363504
+[2026-04-23T11:42:06Z] [iter=30] HEARTBEAT target_type=call_site elapsed_min=26.1 files_done=0 resolved=0 errors=0 current=tests/utils/test_modeling_utils.py
+[2026-04-23T15:18:26Z] [iter=30] CHECKPOINT TRIGGERED elapsed_min=242.4 files_completed=52 new_files_this_iter=0 mem_mb=7929 MB
+[2026-04-23T15:18:26Z] [iter=30] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=211204
+[2026-04-23T15:18:30Z] [iter=30] Checkpoint written, exiting with code 7
+[2026-04-23T15:18:30Z] [iter=30] PHASE END: enrich (checkpointed) elapsed_s=14547 elapsed_min=242.4 files_completed=52
