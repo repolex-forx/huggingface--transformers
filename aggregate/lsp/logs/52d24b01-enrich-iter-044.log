@@ -1,0 +1,18 @@
+[2026-09-08T03:03:02Z] === ENRICH ITERATION 44 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-09-08T03:03:02Z] [iter=44] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-044.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-09-08T03:03:02Z] [iter=44] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-08T03:16:08Z] [iter=44] AST store loaded triples=53053174 load_secs=763 mem_mb=1240 MB
+[2026-09-08T03:16:08Z] [iter=44] Step 2: Finding LSP targets mem_mb=1240 MB
+[2026-09-08T03:20:16Z] [iter=44] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=248
+[2026-09-08T03:20:25Z] [iter=44] Loaded checkpoint partial graph triples=218938
+[2026-09-08T03:24:14Z] [iter=44] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1386 MB
+[2026-09-08T03:30:44Z] [iter=44] Position index built positions=3522695 nodes_with_types=4547979 secs=390 mem_mb=8135 MB
+[2026-09-08T03:30:44Z] [iter=44] Step 3: Starting LSP resolution mem_mb=8135 MB already_completed_types=[] already_completed_files=56
+[2026-09-08T03:30:44Z] [iter=44] Resolving target type target_type=call_site count=363504
+[2026-09-08T03:30:46Z] [iter=44] HEARTBEAT target_type=call_site elapsed_min=27.7 files_done=0 resolved=0 errors=0 current=src/transformers/models/gemma3n/modeling_gemma3n.py
+[2026-09-08T06:09:16Z] [iter=44] HEARTBEAT target_type=call_site elapsed_min=186.2 files_done=1 resolved=252 errors=414 current=utils/check_repo.py
+[2026-09-08T07:02:17Z] [iter=44] HEARTBEAT target_type=call_site elapsed_min=239.3 files_done=2 resolved=421 errors=552 current=src/transformers/models/granite_speech/feature_extraction_granite_speech.py
+[2026-09-08T07:04:13Z] [iter=44] CHECKPOINT TRIGGERED elapsed_min=241.2 files_completed=58 new_files_this_iter=2 mem_mb=8137 MB
+[2026-09-08T07:04:13Z] [iter=44] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=224721
+[2026-09-08T07:04:17Z] [iter=44] Checkpoint written, exiting with code 7
+[2026-09-08T07:04:17Z] [iter=44] PHASE END: enrich (checkpointed) elapsed_s=14471 elapsed_min=241.2 files_completed=58
