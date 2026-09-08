@@ -4,6 +4,7 @@
     "examples/pytorch/image-pretraining/run_mim.py",
     "src/transformers/cli/serving/utils.py",
     "src/transformers/generation/streamers.py",
+    "src/transformers/generation/watermarking.py",
     "src/transformers/models/auto/auto_factory.py",
     "src/transformers/models/clip/configuration_clip.py",
     "src/transformers/models/clipseg/processing_clipseg.py",
@@ -43,6 +44,7 @@
     "tests/models/auto/test_image_processing_auto.py",
     "tests/models/big_bird/test_modeling_big_bird.py",
     "tests/models/biogpt/test_modeling_biogpt.py",
+    "tests/models/bloom/test_modeling_bloom.py",
     "tests/models/cohere_asr/test_modeling_cohere_asr.py",
     "tests/models/dac/test_modeling_dac.py",
     "tests/models/diffllama/test_modeling_diffllama.py",
@@ -53,6 +55,7 @@
     "tests/models/sam3/test_modeling_sam3.py",
     "tests/models/switch_transformers/test_modeling_switch_transformers.py",
     "tests/models/vipllava/test_modeling_vipllava.py",
+    "tests/models/whisper/test_feature_extraction_whisper.py",
     "tests/quantization/bnb/test_mixed_int8.py",
     "tests/quantization/torchao_integration/test_torchao.py",
     "tests/test_sentencepiece_backend_mixin.py",
@@ -69,13 +72,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz",
     "call_sites": 363504,
     "import_statements": 16265,
-    "call_targets_resolved": 8021,
+    "call_targets_resolved": 8320,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 26848,
+    "errors": 27396,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -83,5 +86,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14541
+  "elapsed_seconds": 14555
 }
