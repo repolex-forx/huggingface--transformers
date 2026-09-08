@@ -30,6 +30,7 @@
     "src/transformers/models/sam3/modeling_sam3.py",
     "src/transformers/models/sew_d/modeling_sew_d.py",
     "src/transformers/models/solar_open/modeling_solar_open.py",
+    "src/transformers/models/splinter/modeling_splinter.py",
     "src/transformers/models/vilt/modeling_vilt.py",
     "src/transformers/models/vitpose/modeling_vitpose.py",
     "src/transformers/models/vits/modeling_vits.py",
@@ -53,6 +54,7 @@
     "tests/test_sentencepiece_backend_mixin.py",
     "tests/test_tensor_parallel_mixin.py",
     "tests/trainer/test_trainer.py",
+    "tests/trainer/test_trainer_checkpointing.py",
     "tests/utils/test_modeling_utils.py",
     "utils/download_glue_data.py"
   ],
@@ -62,13 +64,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz",
     "call_sites": 363504,
     "import_statements": 16265,
-    "call_targets_resolved": 6882,
+    "call_targets_resolved": 7193,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 25081,
+    "errors": 25764,
     "extends_clauses": 9767,
     "implements_clauses": 0,
     "import_modules_denormalized": 22218,
@@ -76,5 +78,5 @@
     "extends_class_denormalized": 9767,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14451
+  "elapsed_seconds": 14490
 }
