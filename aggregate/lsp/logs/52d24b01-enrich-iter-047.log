@@ -1,0 +1,19 @@
+[2026-09-09T06:57:11Z] === ENRICH ITERATION 47 START | repo=huggingface/transformers sha=52d24b01 ===
+[2026-09-09T06:57:11Z] [iter=47] PHASE START: enrich repo=huggingface/transformers sha=52d24b01 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/52d24b01-enrich-iter-047.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz
+[2026-09-09T06:57:11Z] [iter=47] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-09-09T07:14:50Z] [iter=47] AST store loaded triples=53053174 load_secs=1046 mem_mb=1280 MB
+[2026-09-09T07:14:50Z] [iter=47] Step 2: Finding LSP targets mem_mb=1280 MB
+[2026-09-09T07:17:40Z] [iter=47] LSP targets found call_sites=363504 imports=16265 extends=9767 implements=0 secs=169
+[2026-09-09T07:17:47Z] [iter=47] Loaded checkpoint partial graph triples=234364
+[2026-09-09T07:20:25Z] [iter=47] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1475 MB
+[2026-09-09T07:24:14Z] [iter=47] Position index built positions=3522695 nodes_with_types=4547979 secs=229 mem_mb=8225 MB
+[2026-09-09T07:24:14Z] [iter=47] Step 3: Starting LSP resolution mem_mb=8225 MB already_completed_types=[] already_completed_files=64
+[2026-09-09T07:24:14Z] [iter=47] Resolving target type target_type=call_site count=363504
+[2026-09-09T07:24:15Z] [iter=47] HEARTBEAT target_type=call_site elapsed_min=27.1 files_done=0 resolved=0 errors=0 current=tests/trainer/distributed/test_trainer_distributed_deepspeed.py
+[2026-09-09T08:36:42Z] [iter=47] HEARTBEAT target_type=call_site elapsed_min=99.5 files_done=1 resolved=29 errors=330 current=src/transformers/models/falcon_h1/modeling_falcon_h1.py
+[2026-09-09T09:32:19Z] [iter=47] HEARTBEAT target_type=call_site elapsed_min=155.1 files_done=2 resolved=154 errors=559 current=tests/generation/test_configuration_utils.py
+[2026-09-09T10:12:47Z] [iter=47] HEARTBEAT target_type=call_site elapsed_min=195.6 files_done=3 resolved=349 errors=744 current=src/transformers/models/qwen2_5_omni/modeling_qwen2_5_omni.py
+[2026-09-09T10:57:34Z] [iter=47] CHECKPOINT TRIGGERED elapsed_min=240.4 files_completed=67 new_files_this_iter=3 mem_mb=8286 MB
+[2026-09-09T10:57:34Z] [iter=47] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/52d24b018e7aa12264b68ae2e162f9aadb26005b.nq.gz triples=241668
+[2026-09-09T10:57:38Z] [iter=47] Checkpoint written, exiting with code 7
+[2026-09-09T10:57:38Z] [iter=47] PHASE END: enrich (checkpointed) elapsed_s=14423 elapsed_min=240.4 files_completed=67
