@@ -1,0 +1,28 @@
+{
+  "commit_sha": "a1b90c4fe2e9cf962bcf2e70339c6021293895b9",
+  "completed_files": [
+    "src/transformers/models/pixtral/image_processing_pil_pixtral.py",
+    "src/transformers/models/qwen2_5_omni/modeling_qwen2_5_omni.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/huggingface/transformers/lsp/a1b90c4fe2e9cf962bcf2e70339c6021293895b9",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/a1b90c4fe2e9cf962bcf2e70339c6021293895b9.nq.gz",
+    "call_sites": 363488,
+    "import_statements": 15580,
+    "call_targets_resolved": 637,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 743,
+    "extends_clauses": 9707,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 21294,
+    "import_symbols_denormalized": 49854,
+    "extends_class_denormalized": 9707,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14415
+}
