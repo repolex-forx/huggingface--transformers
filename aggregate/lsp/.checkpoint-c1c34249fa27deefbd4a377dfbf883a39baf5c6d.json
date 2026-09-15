@@ -1,0 +1,29 @@
+{
+  "commit_sha": "c1c34249fa27deefbd4a377dfbf883a39baf5c6d",
+  "completed_files": [
+    "src/transformers/integrations/executorch.py",
+    "src/transformers/models/idefics3/configuration_idefics3.py",
+    "utils/create_dummy_models.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/huggingface/transformers/lsp/c1c34249fa27deefbd4a377dfbf883a39baf5c6d",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/c1c34249fa27deefbd4a377dfbf883a39baf5c6d.nq.gz",
+    "call_sites": 364057,
+    "import_statements": 14963,
+    "call_targets_resolved": 551,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 606,
+    "extends_clauses": 8853,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 20477,
+    "import_symbols_denormalized": 49889,
+    "extends_class_denormalized": 8853,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14439
+}
