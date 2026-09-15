@@ -1365,8 +1365,9 @@
     {
       "@id": "https://repolex.ai/r/huggingface/transformers/commit/291772b6b5abb8966179be85af3b3b92acc5ecbf",
       "git:hexsha": "291772b6b5abb8966179be85af3b3b92acc5ecbf",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v4.56.1-Vault-Gemma-preview"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v4.56.1-Vault-Gemma-preview",
+      "repolex:parsedAt": "2026-09-15T12:43:10.116979+00:00"
     },
     {
       "@id": "https://repolex.ai/r/huggingface/transformers/commit/cd74917ffc3e8f84e4a886052c5ab32b7ac623cc",
