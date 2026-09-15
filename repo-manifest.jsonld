@@ -1329,8 +1329,9 @@
     {
       "@id": "https://repolex.ai/r/huggingface/transformers/commit/acf295aec3383b2e68ff8e4b6891c3c18fd078fa",
       "git:hexsha": "acf295aec3383b2e68ff8e4b6891c3c18fd078fa",
-      "repolex:parseStatus": "pending",
-      "git:tagName": "v4.55.2"
+      "repolex:parseStatus": "parsed",
+      "git:tagName": "v4.55.2",
+      "repolex:parsedAt": "2026-09-15T14:45:44.624260+00:00"
     },
     {
       "@id": "https://repolex.ai/r/huggingface/transformers/commit/170b2708cb1977690a87753bbe55280974388513",
