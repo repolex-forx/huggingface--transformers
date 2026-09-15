@@ -17,19 +17,19 @@
       "@type": "repolex:GraphFile",
       "repolex:graphType": "commit",
       "repolex:graphFilePath": "commit/commit.nq.gz",
-      "repolex:graphFileSize": 21767605
+      "repolex:graphFileSize": 21764997
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "branch",
       "repolex:graphFilePath": "branch/branch.nq.gz",
-      "repolex:graphFileSize": 163710
+      "repolex:graphFileSize": 164467
     },
     {
       "@type": "repolex:GraphFile",
       "repolex:graphType": "tag",
       "repolex:graphFilePath": "tag/tag.nq.gz",
-      "repolex:graphFileSize": 22658
+      "repolex:graphFileSize": 22627
     },
     {
       "@type": "repolex:GraphFile",
@@ -39,7 +39,7 @@
     }
   ],
   "repolex:parseStatus": "parsed",
-  "repolex:parsedAt": "2026-09-15T06:04:09.929990+00:00",
+  "repolex:parsedAt": "2026-09-15T06:36:24.577878+00:00",
   "repolex:parserVersion": "0.1.0",
   "git:tagName": "v5.4.0"
 }
