@@ -1,0 +1,19 @@
+[2026-09-16T15:32:54Z] === ENRICH ITERATION 5 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-16T15:32:54Z] [iter=5] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-16T15:32:54Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=75 MB
+[2026-09-16T15:50:30Z] [iter=5] AST store loaded triples=55978702 load_secs=1038 mem_mb=1215 MB
+[2026-09-16T15:50:30Z] [iter=5] Step 2: Finding LSP targets mem_mb=1215 MB
+[2026-09-16T15:55:07Z] [iter=5] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=276
+[2026-09-16T15:55:11Z] [iter=5] Loaded checkpoint partial graph triples=113285
+[2026-09-16T15:58:19Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1215 MB
+[2026-09-16T16:04:09Z] [iter=5] Position index built positions=3706585 nodes_with_types=4758913 secs=349 mem_mb=7559 MB
+[2026-09-16T16:04:09Z] [iter=5] Step 3: Starting LSP resolution mem_mb=7560 MB already_completed_types=[] already_completed_files=13
+[2026-09-16T16:04:09Z] [iter=5] Resolving target type target_type=call_site count=371142
+[2026-09-16T16:04:10Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=31.3 files_done=0 resolved=0 errors=0 current=tests/generation/test_utils.py
+[2026-09-16T18:04:04Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=151.2 files_done=1 resolved=92 errors=269 current=src/transformers/integrations/ggml.py
+[2026-09-16T18:18:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=165.4 files_done=2 resolved=193 errors=322 current=src/transformers/models/focalnet/modeling_focalnet.py
+[2026-09-16T18:51:18Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=198.4 files_done=3 resolved=303 errors=400 current=src/transformers/models/esm/modeling_esmfold.py
+[2026-09-16T19:34:05Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=241.2 files_completed=16 new_files_this_iter=3 mem_mb=7693 MB
+[2026-09-16T19:34:05Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=119714
+[2026-09-16T19:34:07Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-09-16T19:34:07Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14471 elapsed_min=241.2 files_completed=16
