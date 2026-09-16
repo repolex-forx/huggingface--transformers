@@ -1,0 +1,30 @@
+{
+  "commit_sha": "ea2eee0bc8920a880db73a12c87ad39b41d3e834",
+  "completed_files": [
+    "examples/pytorch/token-classification/run_ner_no_trainer.py",
+    "src/transformers/data/metrics/squad_metrics.py",
+    "src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py",
+    "tests/models/udop/test_tokenization_udop.py"
+  ],
+  "completed_types": [],
+  "stats": {
+    "graph_uri": "https://repolex.ai/r/huggingface/transformers/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834",
+    "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz",
+    "call_sites": 371142,
+    "import_statements": 665,
+    "call_targets_resolved": 1075,
+    "import_targets_resolved": 0,
+    "symbols_exported": 0,
+    "external_resolved": 0,
+    "dataflow_arg_to_param": 0,
+    "dataflow_return_to_call": 0,
+    "errors": 384,
+    "extends_clauses": 29,
+    "implements_clauses": 0,
+    "import_modules_denormalized": 803,
+    "import_symbols_denormalized": 48250,
+    "extends_class_denormalized": 29,
+    "implements_interface_denormalized": 0
+  },
+  "elapsed_seconds": 14431
+}

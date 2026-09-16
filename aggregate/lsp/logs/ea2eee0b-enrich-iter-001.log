@@ -1,0 +1,19 @@
+[2026-09-15T22:28:44Z] === ENRICH ITERATION 1 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-15T22:28:44Z] [iter=1] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-001.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-15T22:28:44Z] [iter=1] Step 1: Loading AST into disk-backed store mem_mb=75 MB
+[2026-09-15T22:43:17Z] [iter=1] AST store loaded triples=55978702 load_secs=848 mem_mb=1224 MB
+[2026-09-15T22:43:17Z] [iter=1] Step 2: Finding LSP targets mem_mb=1224 MB
+[2026-09-15T22:48:59Z] [iter=1] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=342
+[2026-09-15T22:53:05Z] [iter=1] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1224 MB
+[2026-09-15T23:01:22Z] [iter=1] Position index built positions=3706585 nodes_with_types=4758913 secs=497 mem_mb=7435 MB
+[2026-09-15T23:01:22Z] [iter=1] Step 3: Starting LSP resolution mem_mb=7435 MB already_completed_types=[] already_completed_files=0
+[2026-09-15T23:01:22Z] [iter=1] Resolving target type target_type=call_site count=371142
+[2026-09-15T23:01:24Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=32.7 files_done=0 resolved=0 errors=0 current=src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py
+[2026-09-15T23:02:39Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=33.9 files_done=1 resolved=2 errors=3 current=examples/pytorch/token-classification/run_ner_no_trainer.py
+[2026-09-15T23:23:46Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=55.0 files_done=2 resolved=149 errors=10 current=src/transformers/data/metrics/squad_metrics.py
+[2026-09-15T23:41:43Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=73.0 files_done=3 resolved=289 errors=55 current=tests/models/udop/test_tokenization_udop.py
+[2026-09-16T01:22:26Z] [iter=1] HEARTBEAT target_type=call_site elapsed_min=173.7 files_done=4 resolved=755 errors=217 current=src/transformers/models/speecht5/modeling_speecht5.py
+[2026-09-16T02:29:15Z] [iter=1] CHECKPOINT TRIGGERED elapsed_min=240.5 files_completed=4 new_files_this_iter=4 mem_mb=7563 MB
+[2026-09-16T02:29:15Z] [iter=1] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=87464
+[2026-09-16T02:29:18Z] [iter=1] Checkpoint written, exiting with code 7
+[2026-09-16T02:29:18Z] [iter=1] PHASE END: enrich (checkpointed) elapsed_s=14431 elapsed_min=240.5 files_completed=4
