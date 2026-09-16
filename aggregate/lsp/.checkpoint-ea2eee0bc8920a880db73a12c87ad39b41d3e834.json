@@ -1,17 +1,20 @@
 {
   "commit_sha": "ea2eee0bc8920a880db73a12c87ad39b41d3e834",
   "completed_files": [
+    "examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py",
     "examples/pytorch/token-classification/run_ner_no_trainer.py",
     "src/transformers/data/data_collator.py",
     "src/transformers/data/metrics/squad_metrics.py",
     "src/transformers/integrations/ggml.py",
     "src/transformers/models/blenderbot_small/modeling_flax_blenderbot_small.py",
+    "src/transformers/models/esm/modeling_esmfold.py",
     "src/transformers/models/focalnet/modeling_focalnet.py",
     "src/transformers/models/gpt_neo/configuration_gpt_neo.py",
     "src/transformers/models/layoutlmv3/tokenization_layoutlmv3.py",
     "src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py",
     "src/transformers/models/oneformer/processing_oneformer.py",
     "src/transformers/models/pop2piano/modeling_pop2piano.py",
+    "src/transformers/models/seamless_m4t/modeling_seamless_m4t.py",
     "src/transformers/models/speecht5/modeling_speecht5.py",
     "src/transformers/models/xglm/modeling_tf_xglm.py",
     "tests/generation/test_utils.py",
@@ -24,13 +27,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz",
     "call_sites": 371142,
     "import_statements": 665,
-    "call_targets_resolved": 4048,
+    "call_targets_resolved": 5065,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 2201,
+    "errors": 2900,
     "extends_clauses": 29,
     "implements_clauses": 0,
     "import_modules_denormalized": 803,
@@ -38,5 +41,5 @@
     "extends_class_denormalized": 29,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14470
+  "elapsed_seconds": 14436
 }

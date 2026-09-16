@@ -1,0 +1,19 @@
+[2026-09-16T19:52:34Z] === ENRICH ITERATION 6 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-16T19:52:34Z] [iter=6] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-006.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-16T19:52:34Z] [iter=6] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-09-16T20:24:57Z] [iter=6] AST store loaded triples=55978702 load_secs=1893 mem_mb=1207 MB
+[2026-09-16T20:24:57Z] [iter=6] Step 2: Finding LSP targets mem_mb=1207 MB
+[2026-09-16T20:30:49Z] [iter=6] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=352
+[2026-09-16T20:30:53Z] [iter=6] Loaded checkpoint partial graph triples=119714
+[2026-09-16T20:33:54Z] [iter=6] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1207 MB
+[2026-09-16T20:46:10Z] [iter=6] Position index built positions=3706585 nodes_with_types=4758913 secs=736 mem_mb=7545 MB
+[2026-09-16T20:46:10Z] [iter=6] Step 3: Starting LSP resolution mem_mb=7545 MB already_completed_types=[] already_completed_files=16
+[2026-09-16T20:46:10Z] [iter=6] Resolving target type target_type=call_site count=371142
+[2026-09-16T20:46:15Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=53.7 files_done=0 resolved=0 errors=0 current=src/transformers/models/esm/modeling_esmfold.py
+[2026-09-16T21:52:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=119.5 files_done=1 resolved=158 errors=276 current=examples/pytorch/question-answering/run_qa_beam_search_no_trainer.py
+[2026-09-16T22:19:05Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=146.5 files_done=2 resolved=292 errors=295 current=src/transformers/models/seamless_m4t/modeling_seamless_m4t.py
+[2026-09-16T23:39:02Z] [iter=6] HEARTBEAT target_type=call_site elapsed_min=226.5 files_done=3 resolved=888 errors=638 current=src/transformers/models/wav2vec2_conformer/modeling_wav2vec2_conformer.py
+[2026-09-16T23:53:10Z] [iter=6] CHECKPOINT TRIGGERED elapsed_min=240.6 files_completed=19 new_files_this_iter=3 mem_mb=7693 MB
+[2026-09-16T23:53:10Z] [iter=6] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=130736
+[2026-09-16T23:53:14Z] [iter=6] Checkpoint written, exiting with code 7
+[2026-09-16T23:53:14Z] [iter=6] PHASE END: enrich (checkpointed) elapsed_s=14436 elapsed_min=240.6 files_completed=19
