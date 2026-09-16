@@ -2,9 +2,18 @@
   "commit_sha": "ea2eee0bc8920a880db73a12c87ad39b41d3e834",
   "completed_files": [
     "examples/pytorch/token-classification/run_ner_no_trainer.py",
+    "src/transformers/data/data_collator.py",
     "src/transformers/data/metrics/squad_metrics.py",
+    "src/transformers/models/blenderbot_small/modeling_flax_blenderbot_small.py",
+    "src/transformers/models/gpt_neo/configuration_gpt_neo.py",
+    "src/transformers/models/layoutlmv3/tokenization_layoutlmv3.py",
     "src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py",
-    "tests/models/udop/test_tokenization_udop.py"
+    "src/transformers/models/oneformer/processing_oneformer.py",
+    "src/transformers/models/pop2piano/modeling_pop2piano.py",
+    "src/transformers/models/speecht5/modeling_speecht5.py",
+    "src/transformers/models/xglm/modeling_tf_xglm.py",
+    "tests/models/udop/test_tokenization_udop.py",
+    "tests/test_tokenization_common.py"
   ],
   "completed_types": [],
   "stats": {
@@ -12,13 +21,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz",
     "call_sites": 371142,
     "import_statements": 665,
-    "call_targets_resolved": 1075,
+    "call_targets_resolved": 2984,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 384,
+    "errors": 1294,
     "extends_clauses": 29,
     "implements_clauses": 0,
     "import_modules_denormalized": 803,
@@ -26,5 +35,5 @@
     "extends_class_denormalized": 29,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14431
+  "elapsed_seconds": 14492
 }
