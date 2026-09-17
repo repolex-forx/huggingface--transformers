@@ -1,0 +1,23 @@
+[2026-09-17T17:10:52Z] === ENRICH ITERATION 11 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-17T17:10:52Z] [iter=11] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-011.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-17T17:10:52Z] [iter=11] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-09-17T17:25:26Z] [iter=11] AST store loaded triples=55978702 load_secs=849 mem_mb=1210 MB
+[2026-09-17T17:25:26Z] [iter=11] Step 2: Finding LSP targets mem_mb=1210 MB
+[2026-09-17T17:31:23Z] [iter=11] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=357
+[2026-09-17T17:31:30Z] [iter=11] Loaded checkpoint partial graph triples=160300
+[2026-09-17T17:35:56Z] [iter=11] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1210 MB
+[2026-09-17T17:43:08Z] [iter=11] Position index built positions=3706585 nodes_with_types=4758913 secs=432 mem_mb=7885 MB
+[2026-09-17T17:43:08Z] [iter=11] Step 3: Starting LSP resolution mem_mb=7885 MB already_completed_types=[] already_completed_files=32
+[2026-09-17T17:43:08Z] [iter=11] Resolving target type target_type=call_site count=371142
+[2026-09-17T17:43:10Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=0 resolved=0 errors=0 current=src/transformers/models/mllama/modeling_mllama.py
+[2026-09-17T18:38:46Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=87.9 files_done=1 resolved=23 errors=140 current=examples/flax/image-captioning/create_model_from_encoder_decoder_models.py
+[2026-09-17T18:45:49Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=95.0 files_done=2 resolved=30 errors=141 current=utils/update_tiny_models.py
+[2026-09-17T18:52:06Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=101.2 files_done=3 resolved=79 errors=145 current=setup.py
+[2026-09-17T19:13:15Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=122.4 files_done=4 resolved=94 errors=198 current=src/transformers/models/bamba/modeling_bamba.py
+[2026-09-17T19:47:17Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=156.4 files_done=5 resolved=309 errors=282 current=src/transformers/models/sew_d/modeling_sew_d.py
+[2026-09-17T20:43:10Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=212.3 files_done=6 resolved=580 errors=419 current=src/transformers/models/olmo/modeling_olmo.py
+[2026-09-17T21:00:48Z] [iter=11] HEARTBEAT target_type=call_site elapsed_min=229.9 files_done=7 resolved=640 errors=463 current=examples/pytorch/speech-pretraining/run_wav2vec2_pretraining_no_trainer.py
+[2026-09-17T21:11:03Z] [iter=11] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=39 new_files_this_iter=7 mem_mb=7934 MB
+[2026-09-17T21:11:03Z] [iter=11] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=168405
+[2026-09-17T21:11:07Z] [iter=11] Checkpoint written, exiting with code 7
+[2026-09-17T21:11:07Z] [iter=11] PHASE END: enrich (checkpointed) elapsed_s=14412 elapsed_min=240.2 files_completed=39
