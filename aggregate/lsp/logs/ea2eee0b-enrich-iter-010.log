@@ -1,0 +1,20 @@
+[2026-09-17T13:02:51Z] === ENRICH ITERATION 10 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-17T13:02:51Z] [iter=10] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-010.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-17T13:02:51Z] [iter=10] Step 1: Loading AST into disk-backed store mem_mb=76 MB
+[2026-09-17T13:17:17Z] [iter=10] AST store loaded triples=55978702 load_secs=841 mem_mb=1211 MB
+[2026-09-17T13:17:17Z] [iter=10] Step 2: Finding LSP targets mem_mb=1211 MB
+[2026-09-17T13:23:10Z] [iter=10] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=353
+[2026-09-17T13:23:17Z] [iter=10] Loaded checkpoint partial graph triples=154384
+[2026-09-17T13:27:21Z] [iter=10] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1211 MB
+[2026-09-17T13:34:39Z] [iter=10] Position index built positions=3706585 nodes_with_types=4758913 secs=438 mem_mb=8028 MB
+[2026-09-17T13:34:39Z] [iter=10] Step 3: Starting LSP resolution mem_mb=8028 MB already_completed_types=[] already_completed_files=28
+[2026-09-17T13:34:39Z] [iter=10] Resolving target type target_type=call_site count=371142
+[2026-09-17T13:34:41Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=31.8 files_done=0 resolved=0 errors=0 current=src/transformers/models/electra/modeling_tf_electra.py
+[2026-09-17T14:48:23Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=105.5 files_done=1 resolved=36 errors=187 current=tests/models/grounding_dino/test_image_processing_grounding_dino.py
+[2026-09-17T15:07:44Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=124.9 files_done=2 resolved=220 errors=221 current=tests/models/flava/test_processing_flava.py
+[2026-09-17T15:44:16Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=161.4 files_done=3 resolved=255 errors=251 current=src/transformers/models/gemma3/modular_gemma3.py
+[2026-09-17T16:17:41Z] [iter=10] HEARTBEAT target_type=call_site elapsed_min=194.8 files_done=4 resolved=338 errors=336 current=src/transformers/models/mllama/modeling_mllama.py
+[2026-09-17T17:03:01Z] [iter=10] CHECKPOINT TRIGGERED elapsed_min=240.2 files_completed=32 new_files_this_iter=4 mem_mb=8111 MB
+[2026-09-17T17:03:01Z] [iter=10] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=160300
+[2026-09-17T17:03:04Z] [iter=10] Checkpoint written, exiting with code 7
+[2026-09-17T17:03:04Z] [iter=10] PHASE END: enrich (checkpointed) elapsed_s=14409 elapsed_min=240.2 files_completed=32

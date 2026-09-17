@@ -9,8 +9,10 @@
     "src/transformers/integrations/integration_utils.py",
     "src/transformers/models/blenderbot_small/modeling_flax_blenderbot_small.py",
     "src/transformers/models/blenderbot_small/tokenization_blenderbot_small.py",
+    "src/transformers/models/electra/modeling_tf_electra.py",
     "src/transformers/models/esm/modeling_esmfold.py",
     "src/transformers/models/focalnet/modeling_focalnet.py",
+    "src/transformers/models/gemma3/modular_gemma3.py",
     "src/transformers/models/gpt_neo/configuration_gpt_neo.py",
     "src/transformers/models/layoutlmv3/tokenization_layoutlmv3.py",
     "src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py",
@@ -23,6 +25,8 @@
     "src/transformers/models/xglm/modeling_tf_xglm.py",
     "tests/generation/test_logits_process.py",
     "tests/generation/test_utils.py",
+    "tests/models/flava/test_processing_flava.py",
+    "tests/models/grounding_dino/test_image_processing_grounding_dino.py",
     "tests/models/layoutlmv2/test_tokenization_layoutlmv2.py",
     "tests/models/longt5/test_modeling_longt5.py",
     "tests/models/seamless_m4t/test_modeling_seamless_m4t.py",
@@ -36,13 +40,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz",
     "call_sites": 371142,
     "import_statements": 665,
-    "call_targets_resolved": 7498,
+    "call_targets_resolved": 7998,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 4090,
+    "errors": 4541,
     "extends_clauses": 29,
     "implements_clauses": 0,
     "import_modules_denormalized": 803,
@@ -50,5 +54,5 @@
     "extends_class_denormalized": 29,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14411
+  "elapsed_seconds": 14409
 }
