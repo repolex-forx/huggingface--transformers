@@ -16,13 +16,16 @@
     "src/transformers/models/mobilenet_v1/feature_extraction_mobilenet_v1.py",
     "src/transformers/models/oneformer/processing_oneformer.py",
     "src/transformers/models/pop2piano/modeling_pop2piano.py",
+    "src/transformers/models/resnet/modeling_flax_resnet.py",
     "src/transformers/models/seamless_m4t/modeling_seamless_m4t.py",
     "src/transformers/models/speecht5/modeling_speecht5.py",
     "src/transformers/models/wav2vec2_conformer/modeling_wav2vec2_conformer.py",
     "src/transformers/models/xglm/modeling_tf_xglm.py",
+    "tests/generation/test_logits_process.py",
     "tests/generation/test_utils.py",
     "tests/models/layoutlmv2/test_tokenization_layoutlmv2.py",
     "tests/models/longt5/test_modeling_longt5.py",
+    "tests/models/seamless_m4t/test_modeling_seamless_m4t.py",
     "tests/models/udop/test_tokenization_udop.py",
     "tests/models/wav2vec2/test_feature_extraction_wav2vec2.py",
     "tests/test_tokenization_common.py"
@@ -33,13 +36,13 @@
     "output_path": "/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz",
     "call_sites": 371142,
     "import_statements": 665,
-    "call_targets_resolved": 6793,
+    "call_targets_resolved": 7498,
     "import_targets_resolved": 0,
     "symbols_exported": 0,
     "external_resolved": 0,
     "dataflow_arg_to_param": 0,
     "dataflow_return_to_call": 0,
-    "errors": 3706,
+    "errors": 4090,
     "extends_clauses": 29,
     "implements_clauses": 0,
     "import_modules_denormalized": 803,
@@ -47,5 +50,5 @@
     "extends_class_denormalized": 29,
     "implements_interface_denormalized": 0
   },
-  "elapsed_seconds": 14466
+  "elapsed_seconds": 14411
 }
