@@ -1,0 +1,17 @@
+[2026-09-29T07:12:39Z] === ENRICH ITERATION 18 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-09-29T07:12:39Z] [iter=18] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-018.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-09-29T07:12:39Z] [iter=18] Step 1: Loading AST into disk-backed store mem_mb=75 MB
+[2026-09-29T07:27:25Z] [iter=18] AST store loaded triples=55978702 load_secs=860 mem_mb=1211 MB
+[2026-09-29T07:27:25Z] [iter=18] Step 2: Finding LSP targets mem_mb=1211 MB
+[2026-09-29T07:33:09Z] [iter=18] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=344
+[2026-09-29T07:33:19Z] [iter=18] Loaded checkpoint partial graph triples=230154
+[2026-09-29T07:37:31Z] [iter=18] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1374 MB
+[2026-09-29T07:44:57Z] [iter=18] Position index built positions=3706585 nodes_with_types=4758913 secs=446 mem_mb=8343 MB
+[2026-09-29T07:44:57Z] [iter=18] Step 3: Starting LSP resolution mem_mb=8343 MB already_completed_types=[] already_completed_files=97
+[2026-09-29T07:44:57Z] [iter=18] Resolving target type target_type=call_site count=371142
+[2026-09-29T07:44:59Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=0 resolved=0 errors=0 current=src/transformers/trainer.py
+[2026-09-29T11:07:52Z] [iter=18] HEARTBEAT target_type=call_site elapsed_min=235.2 files_done=1 resolved=761 errors=496 current=src/transformers/pipelines/base.py
+[2026-09-29T11:13:07Z] [iter=18] CHECKPOINT TRIGGERED elapsed_min=240.5 files_completed=98 new_files_this_iter=1 mem_mb=8355 MB
+[2026-09-29T11:13:07Z] [iter=18] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=238714
+[2026-09-29T11:13:10Z] [iter=18] Checkpoint written, exiting with code 7
+[2026-09-29T11:13:10Z] [iter=18] PHASE END: enrich (checkpointed) elapsed_s=14428 elapsed_min=240.5 files_completed=98
