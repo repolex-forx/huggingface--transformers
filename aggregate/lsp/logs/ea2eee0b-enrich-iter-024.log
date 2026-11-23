@@ -1,0 +1,17 @@
+[2026-11-23T10:01:12Z] === ENRICH ITERATION 24 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-11-23T10:01:12Z] [iter=24] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-024.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-11-23T10:01:12Z] [iter=24] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-23T10:15:53Z] [iter=24] AST store loaded triples=55978702 load_secs=858 mem_mb=1173 MB
+[2026-11-23T10:15:53Z] [iter=24] Step 2: Finding LSP targets mem_mb=1173 MB
+[2026-11-23T10:21:16Z] [iter=24] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=323
+[2026-11-23T10:21:31Z] [iter=24] Loaded checkpoint partial graph triples=239631
+[2026-11-23T10:21:31Z] [iter=24] Primed enclosing-def cache from persisted triples entries=24
+[2026-11-23T10:25:35Z] [iter=24] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1315 MB
+[2026-11-23T10:33:24Z] [iter=24] Position index built positions=3706585 nodes_with_types=4758913 secs=469 mem_mb=7917 MB
+[2026-11-23T10:33:24Z] [iter=24] Step 3: Starting LSP resolution mem_mb=7917 MB already_completed_types=[] already_completed_files=98
+[2026-11-23T10:33:24Z] [iter=24] Resolving target type target_type=call_site count=371142
+[2026-11-23T10:33:28Z] [iter=24] HEARTBEAT target_type=call_site elapsed_min=32.3 files_done=0 resolved=0 errors=0 current=src/transformers/pipelines/base.py
+[2026-11-23T10:35:31Z] [iter=24] CHECKPOINT TRIGGERED elapsed_min=34.3 files_completed=98 new_files_this_iter=0 mem_mb=7939 MB
+[2026-11-23T10:35:31Z] [iter=24] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=239730
+[2026-11-23T10:35:34Z] [iter=24] Checkpoint written, exiting with code 7
+[2026-11-23T10:35:34Z] [iter=24] PHASE END: enrich (checkpointed) elapsed_s=2058 elapsed_min=34.3 files_completed=98
