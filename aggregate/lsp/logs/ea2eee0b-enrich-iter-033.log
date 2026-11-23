@@ -1,0 +1,17 @@
+[2026-11-23T16:11:08Z] === ENRICH ITERATION 33 START | repo=huggingface/transformers sha=ea2eee0b ===
+[2026-11-23T16:11:08Z] [iter=33] PHASE START: enrich repo=huggingface/transformers sha=ea2eee0b runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/ea2eee0b-enrich-iter-033.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz
+[2026-11-23T16:11:08Z] [iter=33] Step 1: Loading AST into disk-backed store mem_mb=72 MB
+[2026-11-23T16:22:54Z] [iter=33] AST store loaded triples=55978702 load_secs=686 mem_mb=1115 MB
+[2026-11-23T16:22:54Z] [iter=33] Step 2: Finding LSP targets mem_mb=1115 MB
+[2026-11-23T16:26:30Z] [iter=33] LSP targets found call_sites=371142 imports=665 extends=29 implements=0 secs=215
+[2026-11-23T16:26:39Z] [iter=33] Loaded checkpoint partial graph triples=242834
+[2026-11-23T16:26:39Z] [iter=33] Primed enclosing-def cache from persisted triples entries=69
+[2026-11-23T16:29:24Z] [iter=33] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1157 MB
+[2026-11-23T16:34:01Z] [iter=33] Position index built positions=3706585 nodes_with_types=4758913 secs=278 mem_mb=8145 MB
+[2026-11-23T16:34:01Z] [iter=33] Step 3: Starting LSP resolution mem_mb=8145 MB already_completed_types=[] already_completed_files=100
+[2026-11-23T16:34:01Z] [iter=33] Resolving target type target_type=call_site count=371142
+[2026-11-23T16:34:04Z] [iter=33] HEARTBEAT target_type=call_site elapsed_min=22.9 files_done=0 resolved=0 errors=0 current=src/transformers/models/luke/tokenization_luke.py
+[2026-11-23T16:41:23Z] [iter=33] CHECKPOINT TRIGGERED elapsed_min=30.3 files_completed=100 new_files_this_iter=0 mem_mb=8148 MB
+[2026-11-23T16:41:23Z] [iter=33] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/ea2eee0bc8920a880db73a12c87ad39b41d3e834.nq.gz triples=244356
+[2026-11-23T16:41:25Z] [iter=33] Checkpoint written, exiting with code 7
+[2026-11-23T16:41:25Z] [iter=33] PHASE END: enrich (checkpointed) elapsed_s=1815 elapsed_min=30.3 files_completed=100
